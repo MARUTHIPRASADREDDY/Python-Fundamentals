@@ -1,0 +1,288 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "248e12a9-50f5-4e4e-9d2f-40dd262452ca",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Understanding the concept of F strings: "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "68130782-9b22-440f-ae9e-e5fc435ff489",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#General syntax of F strings:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "83cc4d3e-fa2f-428a-ae8a-5783b9919905",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#f\"custom message {place holder-1} {-2}...{----N}\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f10c0512-eb5d-4d15-b7e9-d0408c1549a0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "firstname ='kalla'\n",
+    "lastname ='Maruthi prasad reddy'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "66d55a6e-71d7-4ae9-afa2-112a7001401f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#req:i want to get the Full name.....?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "3a42c695-da24-42f5-9638-99bcecf5ab16",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'firstname' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[9], line 1\u001b[0m\n\u001b[1;32m----> 1\u001b[0m fullname \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mprint\u001b[39m(\u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;132;01m{\u001b[39;00mfirstname\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m \u001b[39m\u001b[38;5;132;01m{\u001b[39;00mlastname\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m\"\u001b[39m)\n",
+      "\u001b[1;31mNameError\u001b[0m: name 'firstname' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "fullname = print(f\"{firstname}{lastname}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "6902eb3e-8b2d-4c92-9709-0eeb66b2c4c1",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'fullname' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[2], line 1\u001b[0m\n\u001b[1;32m----> 1\u001b[0m Message \u001b[38;5;241m=\u001b[39m \u001b[38;5;124mf\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mkeep up the good work \u001b[39m\u001b[38;5;132;01m{\u001b[39;00mfullname\u001b[38;5;132;01m}\u001b[39;00m\u001b[38;5;124m\"\u001b[39m\n\u001b[0;32m      2\u001b[0m Message\u001b[38;5;241m.\u001b[39mupper()\n\u001b[0;32m      3\u001b[0m \u001b[38;5;28mprint\u001b[39m(Message)\n",
+      "\u001b[1;31mNameError\u001b[0m: name 'fullname' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "Message = f\"keep up the good work {fullname}\"\n",
+    "Message.upper()\n",
+    "print(Message)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cad6961c-cca0-4cc2-b8fa-781456c41a95",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Adding white spaces to strings:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "34a16c07-4dc6-4f5e-9d19-51f86be7751c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "fav_prog_lamguage:python java c++ swift c\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"fav_prog_lamguage:python java c++ swift c\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "27513497-b724-49ed-83a7-225edae1d032",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "fav_prog_lamguage:\n",
+      "python\n",
+      "java\n",
+      "c++\n",
+      "swift\n",
+      "c\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"fav_prog_lamguage:\\npython\\njava\\nc++\\nswift\\nc\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c706f520-23ff-4f01-9c7d-cdd4dcd9724b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#\\n.....>new line delimitexr"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c21a9090-38b4-4080-b5c7-d9a5cd6540c5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Removing white spaces from the strings:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "f3c7b885-b551-44b9-8092-25c38b9b1280",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1,2,3 gaps python\n"
+     ]
+    }
+   ],
+   "source": [
+    "name=(\"1,2,3 gaps python\")#gap is on the lift side...\n",
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "80e667a7-6c2f-4272-9534-9301f847cfcd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Geetha\n"
+     ]
+    }
+   ],
+   "source": [
+    "name2=\"Geetha\"\n",
+    "print(name2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "651696fc-cf5e-401c-9052-e969f995b186",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Geetha\n"
+     ]
+    }
+   ],
+   "source": [
+    "name3=\"Geetha\"\n",
+    "print(name3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "3b7db52c-3edc-42a2-b5f3-36aada56e7ab",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Geetha'"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.strip()\n",
+    "name2.rstrip()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b0ef90f8-6025-473b-9946-86564db83a73",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c52135cd-87ed-47b8-8859-9191c0270ad4",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
