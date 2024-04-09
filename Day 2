@@ -1,0 +1,383 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a08a3b2e-8948-4c34-a4a3-7798fe40bb08",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Introduction to python programming"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5ad038d4-d572-46af-a143-f9173c73ab75",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "understanding the variables in python"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "76517a4b-e550-421f-b333-0073ecd86d44",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "x=2\n",
+    "y=3\n",
+    "z=x+y\n",
+    "print(z)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8abe69e5-b0ec-447d-a100-2720f1c53449",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Rules for declaring the various in python "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "23575087-c23d-4eb5-b7aa-3f6b0aebef08",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Role no1:No namespaces while declaring the variable name"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "cc12c566-537d-4ac4-b97a-bedefed9acc8",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (494259692.py, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Cell \u001b[1;32mIn[4], line 1\u001b[1;36m\u001b[0m\n\u001b[1;33m    First name='Rupesh'\u001b[0m\n\u001b[1;37m          ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "First name='Rupesh'\n",
+    "print(First name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "2e98890a-7402-4366-89d8-02692b347c07",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Rupesh\n"
+     ]
+    }
+   ],
+   "source": [
+    "firstname='Rupesh'\n",
+    "print(firstname)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2587d5fa-f41d-4227-b932-66826cb7183f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Role no2:A variable name should not start with a number ***"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "fce9914b-e0f5-46d6-be77-6fc0df61b332",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid decimal literal (3236554397.py, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Cell \u001b[1;32mIn[6], line 1\u001b[1;36m\u001b[0m\n\u001b[1;33m    1name='Ramesh'\u001b[0m\n\u001b[1;37m    ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid decimal literal\n"
+     ]
+    }
+   ],
+   "source": [
+    "1name='Ramesh'\n",
+    "print(1name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "14f219d3-127b-465e-8cb5-00557afd0b9b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Ramesh\n"
+     ]
+    }
+   ],
+   "source": [
+    "name1='Ramesh'\n",
+    "print(name1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6fef9e7a-043a-43d5-b6ff-cd65fce1ae30",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Role no3:A variable name should not contain any special characters@$%^&*"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "c13e7aed-12af-43c3-a049-588568f6d77a",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (3192898834.py, line 2)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Cell \u001b[1;32mIn[8], line 2\u001b[1;36m\u001b[0m\n\u001b[1;33m    print(name@)\u001b[0m\n\u001b[1;37m               ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "name@='hari'\n",
+    "print(name@)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b2c8edb2-1821-4df4-8596-30c4cedb3221",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d6a16d02-ee43-44e8-be42-1ce0298bb468",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Introduction to datatypes:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "11d3cde4-ad4e-45ef-be04-d1c603fe78f4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "1.String=======>str\n",
+    "1.Number(integers===>int and float  (decimals===>0.1,0.2))===>float\n",
+    "3.lists===>list\n",
+    "4.Tuples===>tuple\n",
+    "5.Dictionaries===>dict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "be2c6726-a4b5-4966-abfc-6cdf381d962a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Classification of datatypes:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ea395640-a492-475a-a85b-a9e925435cd4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Broadly datatypes are classified into two categeories\n",
+    "1.Mutable datatypes===>which we can edit/alter===>flexible in nature\n",
+    "2.Immutable datatypes===>which cannot be able to edit/alter===>flexible in nature"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a5cbdbcf-a8b1-4776-a4fa-cb3da09cb48f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Introduction to strig datatypes:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7a582f49-96bb-404f-bd9e-7ab478fc310d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Defination:A string is hothing but aseries of characters declared in quotes\n",
+    "Classification:It is classified as an immutable datatype now to define the string datatype"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8a99388f-3ee1-4b29-b5f3-85b145959083",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "1.Singlequotes\n",
+    "2.Doubleqotes"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "aeed7b1d-f315-4db1-a2da-13d5675bf41a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Bharath\n"
+     ]
+    }
+   ],
+   "source": [
+    "Name='Bharath'#singlequotes\n",
+    "print(Name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "ff062902-5503-4607-b2bf-5f4bd1ed90b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Bharath\n"
+     ]
+    }
+   ],
+   "source": [
+    "Name2=\"Bharath\"#Doubkesquotes\n",
+    "print(Name2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ea7e84bb-4f6a-41d6-97eb-e8fd7c2a6253",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Introduction to string methods:\n",
+    "type(name)\n",
+    "str"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "71019994-5412-4525-8ada-8ad595051b7f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "ram\n",
+      "Ram\n"
+     ]
+    }
+   ],
+   "source": [
+    "Fullname='ram'\n",
+    "print(Fullname)\n",
+    "print(Fullname.title())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1027ce58-ba5a-4ae5-871f-cdb0ceb191c8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#req:i want the.entire name in capatials....\n",
+    "print(full name.upper())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "41c1d0ba-5bf7-48b9-9176-f84d06ca6751",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#req:i want the.entire name in small case letters....\n",
+    "print(full name.lower())"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
